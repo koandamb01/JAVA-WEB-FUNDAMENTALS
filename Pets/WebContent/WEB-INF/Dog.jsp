@@ -13,7 +13,7 @@
 	<h1>Welcome Dogs</h1>
 		<div class="jumbotron">
 		  <h1 class="display-4">Hello, There!</h1>
-		  <p> <c:out value="${ Dog.showAffection()}"/> </p>
+		  <p> <c:out value="${ Dog.showAffection() }"/> </p>
 		  <hr class="my-4">
 		  <a class="btn btn-primary btn-lg" href="/Pets" role="button">Go Back</a>
 		</div>
