@@ -10,10 +10,12 @@
        margin: 0;
        padding: 0;
    }
+   
    h1, h2{
        text-align: center;
        margin: 10px;
    }
+   
    table {
        margin: auto;
        background: rgb(184, 183, 183);
@@ -33,7 +35,9 @@
    tr.even td:nth-child(even) {
        background-color: black;
    }
+   
 </style>
+
 </head>
 <body>
 	<!-- Getting the parameters from the URL -->
@@ -45,21 +49,19 @@
 	
 
 	<h1>CheckerBoard: 10w X 5h</h1>
-	<p><%= col %></p>
-	
-		<table>
-        <% for(int r = 1; r <= row; r++) { %> 
-          	<% if (r % 2 != 0){ %>
-             	<tr class="odd">
-          	<% } else { %>
-                <tr class="even">
-          	<% } %>
-
-            <% for(int c = 1; c <= col; c++) { %>
-                <td></td>
-            <% } %>
-                </tr>
-        <% } %>
-    </table>
+	<table>
+		<% for(int r = 1; r <= row; r++){ %>
+			<% if(r % 2 != 0){ %>
+				<tr class="odd">
+			<% } else { %>
+				<tr class="even">	
+			<% } %>
+			
+			<% for(int c = 1; r <= col; c++){ %>
+				<td></td>
+			<% } %>
+			</tr>
+		<% } %>
+	</table>
 </body>
 </html>
